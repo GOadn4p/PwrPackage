@@ -47,7 +47,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; cd "$([Environment]::GetFolder
 1. Navigate to Extracted folder in file explorer.
 2. Select file > Powershell > Run PowerShell as Administrator
 2. Copy the following command:
-`Set-ExecutionPolicy Bypass -Scope Process -Force; cd "$([Environment]::GetFolderPath('Desktop'))\PwrPackage"; .\PwrPackage.ps1`
+`powershell.exe -Command "Set-ExecutionPolicy Bypass -Scope Process -Force; powershell.exe -NoExit -File 'PwrPackage.ps1'"`
 2. Paste this into you PowerShell window and hit enter.
 2. Voila! _(Please be patiant and observe the progress bar and output statements. The script may run slowly if there are a lot of artifacts to gather.)_
 1. When the script is finished your final Investigation Package will be located at `C:\Users\<USER>\Desktop\InvestigationPackage.zip`
