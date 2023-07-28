@@ -1,0 +1,28 @@
+###################### Installation/How to use (PowerShell CLI) ######################
+
+1. Open file explorer navigate to Desktop.
+2. Select file > PowerShell > Run PowerShell as Administrator.
+3. Run the following command to get PwrPackage:
+
+$url = 'https://raw.githubusercontent.com/GOadn4p/PwrPackage/main/PwrPackage.ps1'; $HowToUseURL = 'https://raw.githubusercontent.com/GOadn4p/PwrPackage/main/HowToUse.txt'; $dest = Join-Path ([Environment]::GetFolderPath("Desktop")) 'PwrPackage'; if (-Not (Test-Path $dest -PathType Container)) { New-Item -ItemType Directory -Path $dest | Out-Null }; (New-Object net.webclient).DownloadFile($url, (Join-Path $dest 'PwrPackage.ps1')); (New-Object net.webclient).DownloadFile($HowToUseURL, (Join-Path $dest 'HowToUse.txt'))
+
+3. Invoke/Execution PwrPackage using following command:
+
+Set-ExecutionPolicy Bypass -Scope Process -Force; cd "$([Environment]::GetFolderPath('Desktop'))\PwrPackage"; .\PwrPackage.ps1
+
+4. Nice! Your package location will be printed to terminal at the end.
+
+
+###################### Installation/How to use (Zip Download CLI) ######################
+
+1. Download the files as a .zip.
+2. Extract Files from the Zip.
+3. Navigate to Extracted folder in file explorer.
+4. Select file > Powershell > Run PowerShell as Administrator
+5. Copy the following command:
+
+`Set-ExecutionPolicy Bypass -Scope Process -Force; cd "$([Environment]::GetFolderPath('Desktop'))\PwrPackage"; .\PwrPackage.ps1`
+
+6. Paste this into you PowerShell window and hit enter.
+7. Voila! _(Please be patiant and observe the progress bar and output statements. The script may run slowly if there are a lot of artifacts to gather.)_
+8. When the script is finished your final Investigation Package will be located at `C:\Users\<USER>\Desktop\InvestigationPackage.zip`
