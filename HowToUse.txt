@@ -21,7 +21,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; cd "$([Environment]::GetFolder
 4. Select file > Powershell > Run PowerShell as Administrator
 5. Copy the following command:
 
-`Set-ExecutionPolicy Bypass -Scope Process -Force; cd "$([Environment]::GetFolderPath('Desktop'))\PwrPackage"; .\PwrPackage.ps1`
+`powershell.exe -Command "Set-ExecutionPolicy Bypass -Scope Process -Force; powershell.exe -NoExit -File 'PwrPackage.ps1'"`
 
 6. Paste this into you PowerShell window and hit enter.
 7. Voila! _(Please be patiant and observe the progress bar and output statements. The script may run slowly if there are a lot of artifacts to gather.)_
