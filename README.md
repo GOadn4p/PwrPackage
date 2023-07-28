@@ -74,4 +74,4 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; cd "$([Environment]::GetFolder
 ## Acknowledgements 
 
 - ChatGPT - Honestly I'm not great at coding so I asked AI to help me bring this idea to fruition.
-- @xorjosh - Thank you for your useful feedback.
+- [@J3ssh](https://github.com/J3ssh) - Thank you for your useful feedback.
