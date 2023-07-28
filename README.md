@@ -40,7 +40,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; cd "$([Environment]::GetFolder
 4. Nice! Your package location will be printed to terminal at the end.
 
 
-## Installation/How to use (Zip Download CLI)
+## Installation/How to use (Zip Download)
 
 1. Download the files as a .zip.
 1. Extract Files from the Zip.
