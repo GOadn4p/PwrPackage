@@ -15,7 +15,7 @@ The tool retrieves the following information categories:
 - Browser data
 - Prefetch 
 - Event Logs
-- Antivirus data
+- AntiVirus data
 
 
 ## Purpose
